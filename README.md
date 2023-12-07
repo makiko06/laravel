@@ -17,5 +17,6 @@ MySQL の bash
 MySQL にログイン
 
 `mysql -u $MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DATABASE`
+
 ↓
 http://localhost:8080
