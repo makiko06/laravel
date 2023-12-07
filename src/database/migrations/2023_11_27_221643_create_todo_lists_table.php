@@ -10,8 +10,13 @@ return new class extends Migration {
      *
      * @return void
      */
-    public function up() {
-        Schema::drop('todo_lists');
+    public function up()
+    {
+    Schema::create('todo_lists', function (Blueprint $table) {
+        $table->id();
+        $table->string('name', 100); //★追記
+        $table->timestamps();
+    });
     }
 
     /**
@@ -20,6 +25,6 @@ return new class extends Migration {
      * @return void
      */
     public function down() {
-        Schema::dropIfExists('todo_lists');
+        // Schema::dropIfExists('todo_lists');
     }
 };

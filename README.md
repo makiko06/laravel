@@ -4,7 +4,11 @@
 
 docker を立ち上げる
 `docker compose up -d`
-php インストールされてるサーバー
+php インストールされてるサーバーの bash
 `docker compose exec app bash`
-MySQL
+MySQL の bash
 `docker compose exec db bash`
+MySQL にログイン
+`mysql -u $MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DATABASE`
+↓
+http://localhost:8080
