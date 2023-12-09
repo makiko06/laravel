@@ -20,3 +20,8 @@ MySQL にログイン
 
 ↓
 http://localhost:8080
+
+ログ出力
+
+`storage/logs/laravel.log`
+`Log::debug($message);`
