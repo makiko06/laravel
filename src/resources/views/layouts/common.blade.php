@@ -14,6 +14,8 @@
             </div>
         </div>
         @yield('footer')
+
+        @yield('page_scripts')
     </body>
 
     </html>
